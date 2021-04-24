@@ -42,7 +42,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "devise", "~> 4.7"
-
-gem "aws-ses", "~> 0.7.1"
-
 gem "rexml", "~> 3.2"
+gem "aws-sdk-rails", "~> 3.6"
