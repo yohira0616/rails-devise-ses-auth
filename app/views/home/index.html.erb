@@ -11,8 +11,9 @@
 </div>
 
 <div class="mt-3">
-  <p>パスワードをお忘れの方は</p>
-</div>
-
-<div class="mt-3">
+  <% if user_signed_in? %>
+    <%= form_with(url: destroy_user_session_path, method: :delete, remote: false) do |f| %>
+      <%= f.submit "ログアウト", class: "button is-primary" %>
+    <% end %>
+  <% end %>
 </div>
