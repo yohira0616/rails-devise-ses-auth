@@ -12,8 +12,16 @@
 
 <body>
 <div class="container is-max-desktop">
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <% if notice %>
+    <div class="notification is-primary">
+      <p class="notice"><%= notice %></p>
+    </div>
+  <% end %>
+  <% if alert %>
+    <div class="notification is-danger">
+      <p class="alert"><%= alert %></p>
+    </div>
+  <% end %>
 </div>
 <div class="container is-max-desktop">
   <%= yield %>
