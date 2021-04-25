@@ -1,3 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<a class="button">Sign Up</a>
+<div class="columns is-centered">
+  <div class="column is-full">
+    <h1 class="title is-1">RailsDeviseSample</h1>
+  </div>
+</div>
+
+<%= link_to("新規登録", new_user_registration_path, class: "button is-primary is-flex is-justify-content-center") %>
+
+<%= link_to('ログイン', new_user_session_path, class: 'button is-flex is-justify-content-center') %>
+
+<p>パスワードをお忘れの方は</p>
